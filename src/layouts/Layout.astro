@@ -11,12 +11,12 @@ const { title } = Astro.props
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Otrocadev's website" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/img/otrocadev-logo.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-otrocadev-light text-otrocadev-darkblue">
+  <body class="bg-otrocadev-light text-otrocadev-darkblue w-full">
     <slot />
   </body>
 </html>
@@ -25,7 +25,6 @@ const { title } = Astro.props
     font-family: 'Nimbus Mono PS', 'Courier New', monospace;
     font-weight: 300;
   }
-
   b {
     font-weight: bold;
     color: #214a77;
