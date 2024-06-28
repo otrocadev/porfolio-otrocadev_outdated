@@ -1,0 +1,33 @@
+---
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Otrocadev's website" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/img/otrocadev-logo.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-otrocadev-light text-otrocadev-darkblue">
+    <slot />
+  </body>
+</html>
+<style is:global>
+  html {
+    font-family: 'Nimbus Mono PS', 'Courier New', monospace;
+    font-weight: 300;
+  }
+
+  b {
+    font-weight: bold;
+    color: #214a77;
+  }
+</style>
