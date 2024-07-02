@@ -5,11 +5,11 @@ import Footer from '../components/Footer.astro'
 import Social from '../components/Social.astro'
 ---
 
-<Layout title="Otroca.dev">
+<Layout title="Otroca.dev" lang="es">
   <main>
     <Header />
     <section class="h-[80dvh] flex flex-col items-center justify-center gap-4">
-      <span class="ml-0">HI, MY NAME IS</span>
+      <span class="ml-0">HOLA, ME LLAMO</span>
       <sapan
         class="flex text-otrocadev-blue text-5xl border-2 border-otrocadev-darkblue rounded-lg p-4"
       >
@@ -19,7 +19,7 @@ import Social from '../components/Social.astro'
         <p class="animate-fade-in-out">_</p>
       </sapan>
 
-      <span>[front-end developer]</span>
+      <span>[desarrollador front-end]</span>
       <Social />
     </section>
     <section class="bg-otrocadev-darkblue p-4 sm:px-20 sm:py-24">
@@ -33,16 +33,18 @@ import Social from '../components/Social.astro'
         />
         <div class="py-24 [&>p]:my-8 [&>*]:mx-24">
           <p>
-            👋🏼 Greetings! I'm Ot, a <b>software developer</b> established near Barcelona.
+            👋🏼 Buenas! Soy Ot, un <b>desarrollador de software</b> establecido en
+            la zona de Barcelona.
           </p>
           <p>
-            My specialty is <b>the Front-End of web development</b>, but
-            sometimes <b>I do Back-End stuff</b> too when needed. I am proactive,
-            and I like to learn from new technologies to add value. That is why I
-            am currently pursuing a <b
-              >Bachelor's Degree in Techniques for Software Application
-              Development</b
-            > at <a
+            Mi especialidad es <b>el desarrollo front-end</b>, pero a veces <b
+              >hago cosas de back-end</b
+            > cuando lo necesito. Soy una persona proactiva, y me gusta aprender
+            nuevas tecnologias para aportar valor. Es por ello que actualmente estoy
+            cursando el
+            <b
+              >Grado en Tecnicas para el desarrollo de Aplicaciones de Software</b
+            > en la <a
               class="underline text-otrocadev-blue font-bold"
               href="https://blogs.uoc.edu/informatica/es/bachelors-degree-in-techniques-for-software-development/"
               target="_blank"
@@ -50,20 +52,21 @@ import Social from '../components/Social.astro'
             >.
           </p>
           <p>
-            I feel very <b>comfortable in team environments</b>, as I believe
-            that diverse perspectives and opinions usually come together to
-            create a better final result. As someone who believes in continuous
-            growth, I am convinced that <b
-              >being part of a team is always an opportunity to add value</b
-            > while you learn new things.
+            Me siento muy <b>cómodo en entornos de equipo</b>, ya que creo que
+            las perspectivas y opiniones diversas suelen unirse para crear un
+            mejor resultado final. Como alguien que cree en el crecimiento
+            continuo, estoy convencido de que <b
+              >ser parte de un equipo siempre es una oportunidad para añadir
+              valor</b
+            > mientras aprendes cosas nuevas.
           </p>
-          <p><b>I like to say:</b></p>
+          <p><b>Siempre me gusta decir:</b></p>
           <blockquote class="text-otrocadev-blue text-lg">
             <i>
-              "It is obvious that a senior will for sure teach a lot of things
-              to a Junior, but what is actually crazy, is how a senior can learn
-              a lot of new things from a junior. It is a symbiosis that creates
-              really special synergies."
+              "Es obvio que un senior seguramente enseñará muchas cosas a un
+              junior, pero lo que es realmente sorprendente, es cómo un senior
+              puede aprender muchas cosas nuevas de un junior. Es una simbiosis
+              que crea sinergias realmente especiales."
             </i>
           </blockquote>
         </div>
@@ -75,55 +78,64 @@ import Social from '../components/Social.astro'
         src="./img/first_day_wallbox.avif"
         alt="Ot Roca's first day at Wallbox"
       />
-      <h3 class="text-4xl font-bold py-4 text-otrocadev-blue">MY EXPERIENCE</h3>
+      <h3 class="text-4xl font-bold py-4 text-otrocadev-blue">
+        MI EXPERIENCIA
+      </h3>
       <h4 class="text-2xl font-semibold">WALLBOX CHARGERS | [Full-Stack]</h4>
       <p>
-        Let me walk you through what I've been up to with the <b
-          >Wallbox Digital Solutions team</b
+        Permíteme contarte lo que he estado haciendo con el <b
+          >equipo de Soluciones Digitales de Wallbox</b
         >.
       </p>
       <p>
-        My main goal was building a platform to manage the <b>SIM cards</b> hooked
-        up to specific models of the company's electric vehicle chargers. 🚗⚡️ This
-        tool was stablished in a VPN secured enviroment inside a bigger team's tool.
+        Mi objetivo principal fue construir una plataforma para gestionar las <b
+          >tarjetas SIM</b
+        > conectadas a modelos específicos de los cargadores de vehículos eléctricos
+        de la empresa. 🚗⚡️ Esta herramienta se estableció en un entorno seguro
+        de VPN dentro de una herramienta más grande del equipo.
       </p>
-      <p>💼🔒 Here's the breakdown of how I made it happen:</p>
+      <p>💼🔒 Aquí tienes el desglose de cómo lo hice posible:</p>
       <ul class="list-disc ml-8 [&>li]:py-2">
         <li>
-          🛠️ The first step was to <b>craft a custom Backend using Typescript</b
-          >. This let us dive into all the useful information details, letting
-          us handle SIM card operations like a breeze.
+          🛠️ El primer paso fue <b
+            >crear un Backend personalizado usando Typescript</b
+          >. Esto nos permitió acceder a todos los detalles de información
+          útiles, permitiéndonos manejar las operaciones de las tarjetas SIM con
+          facilidad.
         </li>
         <li>
-          💻 Once the Backend was good to go, I pivoted to <b
-            >building out the Frontend</b
-          >. I made sure it was flexible and usable in all devices, and future
-          proved to addapt to the needs that the team might find in the field.
-          Plus, it's built using SOLID techniques, so it can grow and evolve
-          right alongside the team needs. The technology used was <b>Vue.js</b> for
-          this bit, and it's been smooth ever since.
+          💻 Una vez que el Backend estuvo listo, me volqué a <b
+            >desarrollar el Frontend</b
+          >. Me aseguré de que fuera flexible y usable en todos los
+          dispositivos, y preparado para adaptarse a las necesidades que el
+          equipo pudiera encontrar en el campo. Además, está construido usando
+          técnicas SOLID, por lo que puede crecer y evolucionar junto con las
+          necesidades del equipo. La tecnología utilizada para esta parte fue <b
+            >Vue.js</b
+          >, y ha sido fluido desde entonces.
         </li>
         <li>
-          🔄 During the whole process, I could learn and upgrade some of the
-          most tried-and-true software engineering techniques. I used AGILE
-          methods and plenty of one-on-ones with our product owners and project
-          manager to make sure everything worked out well. This way, we made
-          sure the project was ticking all the right boxes and fitting with the
-          team's needs.
+          🔄 Durante todo el proceso, pude aprender y mejorar algunas de las
+          técnicas de ingeniería de software más probadas y verdaderas. Utilicé
+          métodos AGILE y numerosas reuniones uno a uno con nuestros
+          propietarios de producto y el gerente de proyecto para asegurarme de
+          que todo funcionara bien. De esta manera, nos aseguramos de que el
+          proyecto cumpliera todos los requisitos y se ajustara a las
+          necesidades del equipo.
         </li>
       </ul>
       <h5>
-        Why this tool had a <b> REAL WORLD impact</b>?
+        ¿Por qué esta herramienta tubo UN <b>IMPACTO REAL</b>?
       </h5>
       <p>
-        Once finished, the engineers and technicians of the company, had a
-        <b>rock-solid software solution</b> to lean on while they're out in the field,
-        dealing with real-world situations.
+        Una vez terminado, los ingenieros y tecnicos de la compañia tenia
+        <b>una solución de software solida</b> en la que confiar mientras trabajan
+        en el mundo real, con situaciones reales.
       </p>
       <p>
-        With this flexibilty, any software team that comes later can modify,
-        expand and enhance the base product, to adapt it to new needs that may
-        arise.
+        Con esta flexibilidad, cualquier equipo de software que aparezca mas
+        tarde puede modificar, expandir y mejorar el producto base para
+        adaptarlo a las necesidades que puedan surgir.
       </p>
     </section>
     <Footer />
