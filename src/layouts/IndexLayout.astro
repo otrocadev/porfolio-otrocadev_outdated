@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro'
+import HeroTitle from '../components/Index/HeroTitle.astro'
+import Experience from '../components/Index/Experience.astro'
+import AboutMe from '../components/Index/AboutMe.astro'
+
+const { title, lang } = Astro.props
+---
+
+<Layout title={title} lang={lang}>
+  <HeroTitle lang={lang} />
+  <Experience>
+    <slot name="experience" />
+  </Experience>
+  <AboutMe>
+    <slot name="aboutMe" />
+  </AboutMe>
+</Layout>

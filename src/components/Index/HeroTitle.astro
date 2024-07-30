@@ -1,0 +1,34 @@
+---
+import Social from '../../components/Social.astro'
+import ChevronDown from '../Icons/ChevronDown.astro'
+
+import json from '../../texts/translations.json'
+
+const { lang } = Astro.props
+---
+
+<section class="h-[95dvh] flex flex-col items-center justify-center gap-4">
+  <div class="flex flex-col gap-2">
+    <span class="ml-2 text-xl font-bold text-left"
+      >{json[lang].introductionText}</span
+    >
+    <sapan
+      class="flex text-otrocadev-green text-5xl border-4 border-otrocadev-light rounded-lg p-4"
+    >
+      <h2 class="animate-typing overflow-hidden whitespace-nowrap font-bold">
+        Ot Roca
+      </h2>
+      <p class="animate-fade-in-out">_</p>
+    </sapan>
+  </div>
+  <p class="font-bold">
+    [<span class="text-otrocadev-lightblue">
+      {json[lang].jobTitle}
+    </span>
+    ]
+  </p>
+  <Social />
+</section>
+<div class="h-6 animate-bounce mb-8">
+  <ChevronDown />
+</div>

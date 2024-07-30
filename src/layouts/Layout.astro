@@ -1,4 +1,7 @@
 ---
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+
 interface Props {
   title: string
   lang: string
@@ -17,17 +20,57 @@ const { title, lang } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-otrocadev-light text-otrocadev-darkblue w-full">
-    <slot />
+  <body class="text-otrocadev-light w-full text-lg">
+    <Header />
+    <div class="bg-gradient-to-b from-slate-800 to-otrocadev-darkblue bg-fixed">
+      <slot />
+      <Footer />
+    </div>
   </body>
 </html>
 <style is:global>
   html {
-    font-family: 'Nimbus Mono PS', 'Courier New', monospace;
-    font-weight: 300;
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo,
+      Consolas, 'DejaVu Sans Mono', monospace;
+    font-weight: normal;
   }
-  b {
+  h3 {
+    margin-bottom: 2rem;
+    font-size: 2.25rem;
     font-weight: bold;
-    color: #214a77;
+    padding-top: 1rem;
+    paddding-bottom: 1rem;
+    color: #fc73fc;
+  }
+  h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+  }
+  strong {
+    font-weight: bold;
+    color: #a8fe5f;
+  }
+  blockquote {
+    color: #a8fe5f;
+  }
+  li {
+    margin-left: 2rem;
+  }
+  li:before {
+    position: relative;
+    left: -1.6rem;
+    top: 1.8rem;
+    font-size: 1.6rem;
+    content: '✓';
+    color: #a8fe5f;
+  }
+  a {
+    text-decoration: underline;
+    color: #a8fe5f;
+    font-weight: bold;
+  }
+  .social-link {
+    color: white;
   }
 </style>

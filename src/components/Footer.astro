@@ -4,12 +4,12 @@ import Social from './Social.astro'
 ---
 
 <footer
-  class="bg-otrocadev-darkblue text-otrocadev-light px-24 py-12 flex justify-between items-center"
+  class="bg-otrocadev-darkblue text-otrocadev-light border-t border-otrocadev-gray px-24 py-12 flex justify-between items-center flex-wrap gap-8"
 >
   <Social />
   <span class="text-xl font-bold"> Otrocadev | 2024 </span>
   <a
-    class="flex items-center h-12 gap-2 border-2 w-fit p-4 rounded-lg hover:font-semibold hover:bg-otrocadev-light hover:text-otrocadev-darkblue transition-colors duration-300"
+    class="no-underline flex items-center h-12 gap-2 border-2 w-fit p-4 rounded-lg text-otrocadev-light hover:font-semibold hover:bg-otrocadev-light hover:text-otrocadev-darkblue transition-colors duration-300"
     href="https://github.com/otrocadev/portfolio-otrocadev"
     target="_blank"
     rel="noopener noreferrer"
@@ -17,6 +17,6 @@ import Social from './Social.astro'
     <span class="size-6">
       <Github />
     </span>
-    <p class="">Source code on Github</p>
+    <p>Source code on Github</p>
   </a>
 </footer>

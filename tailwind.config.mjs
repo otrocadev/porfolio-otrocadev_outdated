@@ -5,9 +5,11 @@ export default {
     extend: {
       colors: {
         otrocadev: {
-          blue: '#214a77',
+          grey: '#0e2129',
           darkblue: '#001c3e',
           light: '#e4f2f9',
+          lightblue: '#fc73fc',
+          green: '#A8Fe5f',
         },
       },
       keyframes: {

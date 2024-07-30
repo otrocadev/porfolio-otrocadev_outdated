@@ -1,0 +1,10 @@
+{
+  "es": {
+    "introductionText": "HOLA, ME LLAMO",
+    "jobTitle": "desarrollador front-end"
+  },
+  "en": {
+    "introductionText": "HI, MY IS",
+    "jobTitle": "front-end developer"
+  }
+}
