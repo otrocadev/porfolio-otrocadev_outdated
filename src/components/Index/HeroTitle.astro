@@ -25,6 +25,10 @@ const { lang } = Astro.props
     [<span class="text-otrocadev-lightblue">{json[lang].jobTitle}</span>]
   </p>
   <Social />
+  <span
+    class="text-2xl bg-gradient-to-r from-emerald-500 to-green-400 rounded-lg py-2 px-4 border-2 text-green-900 border-green-900 relative -top-2 left-12 -rotate-6"
+    >{json[lang].jobstate}</span
+  >
 </section>
 <div class="h-6 animate-bounce mb-8">
   <ChevronDown />
