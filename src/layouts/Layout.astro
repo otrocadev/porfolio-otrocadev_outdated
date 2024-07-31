@@ -21,12 +21,14 @@ const { title, lang } = Astro.props
     <title>{title}</title>
   </head>
   <body
-    class="text-otrocadev-light w-screen text-lg sm:py-12 bg-[url('/img/protruding-squares.svg')]"
+    class="text-otrocadev-light w-screen text-lg bg-[url('/img/protruding-squares.svg')]"
   >
-    <div
-      class="max-w-screen-2xl sm:h-[90dvh] sm:rounded-2xl bg-gradient-to-b from-slate-800 to-otrocadev-darkblue overflow-scroll mx-auto border-4 border-slate-400"
-    >
+    <div class="flex justify-center sm:mt-8">
       <Header lang={lang} />
+    </div>
+    <div
+      class="flex flex-col max-w-screen-2xl sm:h-[90dvh] sm:rounded-2xl bg-gradient-to-b from-slate-800 to-otrocadev-darkblue overflow-y-scroll overflow-x-hidden mx-auto border-4 border-slate-400"
+    >
       <slot />
       <Footer />
     </div>
