@@ -20,9 +20,13 @@ const { title, lang } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="text-otrocadev-light w-full text-lg">
-    <Header lang={lang} />
-    <div class="bg-gradient-to-b from-slate-800 to-otrocadev-darkblue bg-fixed">
+  <body
+    class="text-otrocadev-light w-screen text-lg sm:py-12 bg-[url('/img/protruding-squares.svg')]"
+  >
+    <div
+      class="max-w-screen-2xl sm:h-[90dvh] sm:rounded-2xl bg-gradient-to-b from-slate-800 to-otrocadev-darkblue overflow-scroll mx-auto border-4 border-slate-400"
+    >
+      <Header lang={lang} />
       <slot />
       <Footer />
     </div>
