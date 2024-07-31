@@ -24,17 +24,19 @@ import json from '../texts/translations.json'
     >
   </button>
   <div class="absolute hidden p-1 right-0 top-14 group-hover:block">
-    <ul class="bg-otrocadev-darkblue shadow-xl rounded-lg">
-      <li
+    <span class="bg-otrocadev-darkblue shadow-xl rounded-lg flex flex-col">
+      <a
         class="cursor-pointer rounded-lg py-2 px-6 hover:bg-slate-600 transition-colors duration-300"
+        href={json.es.root}
       >
-        <a href={json.es.root}> 🇪🇸 ES </a>
-      </li>
-      <li
+        🇪🇸 ES
+      </a>
+      <a
         class="cursor-pointer rounded-lg py-2 px-6 hover:bg-slate-600 transition-colors duration-300"
+        href={json.en.root}
       >
-        <a href={json.en.root}> 🇬🇧 EN </a>
-      </li>
-    </ul>
+        🇬🇧 EN
+      </a>
+    </span>
   </div>
 </div>
