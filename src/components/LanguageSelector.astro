@@ -1,0 +1,40 @@
+---
+import json from '../texts/translations.json'
+---
+
+<div class="group flex items-center justify-center size-14 mx-2">
+  <button
+    class="rounded-lg p-2 group-hover:bg-slate-600 transition-colors duration-300"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 20 20"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-language"
+      ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 5h7"
+      ></path><path d="M9 3v2c0 4.418 -2.239 8 -5 8"></path><path
+        d="M5 9c0 2.144 2.952 3.908 6.7 4"></path><path d="M12 20l4 -9l4 9"
+      ></path><path d="M19.1 18h-6.2"></path></svg
+    >
+  </button>
+  <div class="absolute hidden p-1 right-0 top-14 group-hover:block">
+    <ul class="bg-otrocadev-darkblue shadow-xl rounded-lg">
+      <li
+        class="cursor-pointer rounded-lg py-2 px-6 hover:bg-slate-600 transition-colors duration-300"
+      >
+        <a href={json.es.root}> 🇪🇸 ES </a>
+      </li>
+      <li
+        class="cursor-pointer rounded-lg py-2 px-6 hover:bg-slate-600 transition-colors duration-300"
+      >
+        <a href={json.en.root}> 🇬🇧 EN </a>
+      </li>
+    </ul>
+  </div>
+</div>

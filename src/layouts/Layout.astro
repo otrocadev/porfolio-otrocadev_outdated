@@ -21,7 +21,7 @@ const { title, lang } = Astro.props
     <title>{title}</title>
   </head>
   <body class="text-otrocadev-light w-full text-lg">
-    <Header />
+    <Header lang={lang} />
     <div class="bg-gradient-to-b from-slate-800 to-otrocadev-darkblue bg-fixed">
       <slot />
       <Footer />
@@ -54,10 +54,13 @@ const { title, lang } = Astro.props
   blockquote {
     color: #a8fe5f;
   }
-  li {
+  .social-link {
+    color: white;
+  }
+  .experience li {
     margin-left: 2rem;
   }
-  li:before {
+  .experience li:before {
     position: relative;
     left: -1.6rem;
     top: 1.8rem;
@@ -65,12 +68,10 @@ const { title, lang } = Astro.props
     content: '✓';
     color: #a8fe5f;
   }
-  a {
+
+  .aboutme a {
     text-decoration: underline;
     color: #a8fe5f;
     font-weight: bold;
-  }
-  .social-link {
-    color: white;
   }
 </style>

@@ -1,10 +1,16 @@
 {
   "es": {
     "introductionText": "HOLA, ME LLAMO",
-    "jobTitle": "desarrollador front-end"
+    "jobTitle": "desarrollador front-end",
+    "downloadCV": "Descarga mi CV!",
+    "cvLink": "/docs/CV_OtRoca.pdf",
+    "root": "/"
   },
   "en": {
     "introductionText": "HI, MY NAME IS",
-    "jobTitle": "front-end developer"
+    "jobTitle": "front-end developer",
+    "downloadCV": "Download my CV!",
+    "cvLink": "/docs/CV_OtRoca.pdf",
+    "root": "/en"
   }
 }
